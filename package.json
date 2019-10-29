@@ -1,6 +1,6 @@
 {
   "name": "@medayo/expo-detox",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Little package that helps you get going with detox ;-)",
   "scripts": {
     "preinstall": "./download_expo_client.sh",
