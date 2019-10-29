@@ -10,4 +10,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 var basepath = path.join(__dirname + '/../');
-fs.copyFileSync(basepath + 'replace/AppleSimUtils.js', basepath + '../../node_modules/detox/src/devices/ios/AppleSimUtils.js');
+const projectRoot = path.resolve('../../');
+console.log(projectRoot);
+fs.copyFileSync(basepath + 'replace/AppleSimUtils.js', projectRoot + '/node_modules/detox/src/devices/ios/AppleSimUtils.js');
