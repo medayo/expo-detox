@@ -1,0 +1,21 @@
+{
+  "name": "@medayo/expo-detox",
+  "version": "1.0.0",
+  "description": "Little package that helps you get going with detox ;-)",
+  "scripts": {
+    "preinstall": "./download_expo_client.sh",
+    "postinstall": "npm run replace-detox-files",
+    "build": "tsc",
+    "replace-detox-files": "node ./dist/replace.js"
+  },
+  "author": "Calum MacRae <calum.macrae@medayo.com>",
+  "license": "ISC",
+  "dependencies": {
+    "detox": "^14.5.1",
+    "detox-expo-helpers": "^0.6.0",
+    "expo-detox-hook": "^1.0.10"
+  },
+  "devDependencies": {
+    "typescript": "^3.6.4"
+  }
+}
