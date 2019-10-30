@@ -9,5 +9,4 @@ if (__dirname.includes('@medayo/expo-detox')) {
     projectRoot = basepath;
 }
 
-console.log(projectRoot);
 fs.copyFileSync(basepath + 'replace/AppleSimUtils.js', projectRoot + '/node_modules/detox/src/devices/ios/AppleSimUtils.js');
